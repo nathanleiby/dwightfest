@@ -1,11 +1,137 @@
 <head>
     <style>
+    @font-face {
+      font-family: 'EastLift';
+      src: url('fonts/East_Lift.ttf');
+    }
+    @font-face {
+      font-family: 'albaRegular';
+      src: url('fonts/alba.regular.ttf');
+    }
     html {
-      background: url(./bg.jpg) no-repeat center center fixed;
+      background: url(./blank_bg.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      text-align: center;
+      text-shadow: 2px 2px black;
+    }
+    .top-bar {
+      font-family: 'EastLift', sans-serif;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 100px;
+      color: red;
+      letter-spacing: 15px;
+      margin: 20px 0px 0px 0px;
+    }
+    .body-main {
+      /* font-family: 'albaRegular', sans-serif; */
+    }
+    .subtitle {
+      color: orange;
+      font-size: 50px;
+      font-family: 'albaRegular', sans-serif;
+    }
+    .subtitle-year {
+      color: mediumspringgreen;
+      font-size: 50px;
+      font-family: 'albaRegular', sans-serif;
+    }
+    .set-list-item {
+      text-shadow: 1px 1px black;
+      display: flex;
+      max-width: 800px;
+      justify-content: space-between;
+      margin: 15px auto;
+      font-size: 24px;
+      text-align: left;
+    }
+    .set-list-title {
+      color: slateblue;
+    }
+    .set-list-title-other {
+      color: yellowgreen;
+    }
+    audio {
+      height: 30px;
+    }
+    @media only screen and (max-width: 800px) {
+      audio {
+        width: 250px;
+        min-width: 250px;
+      }
     }
     </style>
 </head>
+<body>
+  <div class="top-bar">
+    <h1>Dwight Fest</h1>
+  </div>
+  <div class="body-main">
+    <div class="subtitle">Festival of Dwights</div>
+    <div class="subtitle-year">2018</div>
+    <div class="set-list-item">
+      <div class="set-list-title">You are my Sunshine -- Steph and Nate</div>
+      <audio controls>
+        <source src="songs/You Are My Sunshine.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="set-list-item">
+      <div class="set-list-title-other">Have Hope -- Nate</div>
+      <audio controls>
+        <source src="songs/have_hope.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="set-list-item">
+      <div class="set-list-title">Learn to Walk -- Erik</div>
+      <audio controls>
+        <source src="songs/learn_to_walk.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="set-list-item">
+      <div class="set-list-title-other">Basement Theme -- John</div>
+      <audio controls>
+        <source src="songs/basement_theme.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="set-list-item">
+      <div class="set-list-title">BART -- John</div>
+      <audio controls>
+        <source src="songs/BART.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="set-list-item">
+      <div class="set-list-title-other">Littlefing -- Kit and John</div>
+      <audio controls>
+        <source src="songs/littlefing_dwight.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="set-list-item">
+      <div class="set-list-title">Tyrion the Half-Nosed Halfman -- Kit and John</div>
+      <audio controls>
+        <source src="songs/tyrion_dwight.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="set-list-item">
+      <div class="set-list-title-other">Gallavant Season 3 -- Kit and John</div>
+      <audio controls>
+        <source src="songs/gallavant.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="set-list-item">
+      <div class="set-list-title">Away in a Manger -- Jamie and Erik</div>
+      <audio controls>
+        <source src="songs/away_in_a_manger.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="set-list-item">
+      <div class="set-list-title-other">Boba, Boba -- Nate</div>
+      <audio controls>
+        <source src="songs/boba_boba_dwight.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+</body>
